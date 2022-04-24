@@ -14,7 +14,6 @@ destroyBtnEl.addEventListener("click", onDestroyBtnClick);
 
 
 function onCreateBtnClick(event) {
-  renderedList.innerHTML = "";
   createBoxes(inputEl.value);
 };
 
@@ -37,7 +36,7 @@ function createBoxes(amount) {
     </div>`;
   };
 
-  renderedList.insertAdjacentHTML("afterbegin", boxCollectionMarkup);
+  renderedList.insertAdjacentHTML("beforeEnd", boxCollectionMarkup);
   
 };
 
