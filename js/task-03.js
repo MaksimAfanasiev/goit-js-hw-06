@@ -19,6 +19,4 @@ const galleryItemsMarkup = images.map(image => {
     return `<li class="gallery__item"><img src=${image.url} alt=${image.alt}></li>`;
 }).join("");
 
-console.log(galleryItemsMarkup);
-
 galleryList.insertAdjacentHTML("afterbegin", galleryItemsMarkup);
